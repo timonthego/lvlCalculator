@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>XP Calc</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	 <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<!-- Bootstrap CSS -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<!--===============================================================================================-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="css/util.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/progess.css">
+<!--===============================================================================================-->
+
+
+</head>
+<body>
+
+
+	<div class="container-contact100 ">
+		<div class="wrap-contact100 whole">
+			<div class="calc">
+			<form class="contact100-form validate-form">
+				<span class="contact100-form-title">
+					XP CALC  (40+)
+				</span>
+
+				
+				<div class="selector wrap-input100 input100-select">
+					<span class="label-input100">Current level</span>
+					<select class="form-select text-center  " aria-label="Default select example">
+						<option selected disabled value="38">Chose the trainer's current level</option>
+						<option value="40">40</option>
+						<option value="41">41</option>
+						<option value="42">42</option>
+						<option value="43">43</option>
+						<option value="44">44</option>
+						<option value="45">45</option>
+						<option value="46">46</option>
+						<option value="47">47</option>
+						<option value="48">48</option>
+						<option value="49">49</option>
+						<option value="50">50</option>
+					</select>
+				</div>
+
+				<img src="images/IMG_1512.jpeg" class="img-fluid" width="350px">
+				<div class="wrap-input100 validate-input" data-validate="Name is required">
+					<span class="label-input100">Current XP</span>
+					<input class="input100 xpForm" type="number" name="xp" placeholder="Enter trainer's xp" onkeydown="return event.keyCode !== 69">
+					<span class="focus-input100"></span>
+				</div>
+
+
+
+				<div class="container-contact100-form-btn">
+					<div class="wrap-contact100-form-btn">
+						<div class="contact100-form-bgbtn"></div>
+						<button class="contact100-form-btn submit">
+							<span>
+								Submit
+								<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+							</span>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+	<div class="col-xl-3 col-lg-6 mb-4 d-none totalProgress">
+		<div class="bg-white rounded-lg p-5 shadow">
+			<h4 class="text-center my-3 userText">This trainer is level XX with XXX,XXX,XXXxp!</h4>
+			<h4 class="text-center my-3 adjustedLevel">This trainer's ajusted level is XX!</h4>
+		  <h2 class="h6 font-weight-bold text-center mb-4 ">Overall progress Towards 50!</h2>
+  
+		  <!-- Progress bar 1 -->
+		  <div class="circleTrans">
+		 
+		</div>
+		  <!-- END -->
+		  <h4 class="text-center my-3 ProgressText"> XXX,XXX,XXX xp Left!</h4>
+		  <div class="container-contact100-form-btn resetBtn ">
+			<div class="wrap-contact100-form-btn">
+				<div class="contact100-form-bgbtn"></div>
+				<button class="contact100-form-btn Reset">
+					<span>
+						Go Back
+						<i class="fa fa-long-arrow-right m-l-7" aria-hidden="true"></i>
+					</span>
+				</button>
+			</div>
+			
+		</div>
+		
+		</div>
+		
+	 </div>
+
+	  
+
+</div>
+
+
+
+
+	<div id="dropDownSelect1"></div>
+
+	
+<!--===============================================================================================-->
+	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/bootstrap/js/popper.js"></script>
+	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/select2/select2.min.js"></script>
+	<script>
+		$(".selection-2").select2({
+			minimumResultsForSearch: 20,
+			dropdownParent: $('#dropDownSelect1')
+		});
+	</script>
+<!--===============================================================================================-->
+	<script src="vendor/daterangepicker/moment.min.js"></script>
+	<script src="vendor/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendor/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="js/main.js"></script>
+	<script src="js/simpcirc.js"></script>
+	<script src="js/progress.js"></script>
+	<script src="js/calc.js"></script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+<script src="js/calc.js"></script>
+</body>
+</html>
